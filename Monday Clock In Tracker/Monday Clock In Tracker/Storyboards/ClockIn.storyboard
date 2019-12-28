@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xFi-yc-hT6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Clock In-->
+        <scene sceneID="a7h-E7-q1e">
+            <objects>
+                <viewController storyboardIdentifier="ClockInViewController" id="BgM-Pv-0XY" customClass="ClockInViewController" customModule="Monday" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VBX-dS-xef">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To Monday" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLT-a1-zCu">
+                                <rect key="frame" x="20" y="265.5" width="374" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/13/19" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGr-93-zBU">
+                                <rect key="frame" x="20" y="143" width="374" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="3MN-Ap-kKV" userLabel="Button Layout Container">
+                                <rect key="frame" x="20" y="441" width="374" height="176"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="top" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8XU-AB-bg2">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="83.5"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="Clock In">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="punchButton:" destination="BgM-Pv-0XY" eventType="touchUpInside" id="naR-rG-Itb"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gVR-fD-zb1" userLabel="Break button Holder">
+                                        <rect key="frame" x="0.0" y="92.5" width="374" height="83.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2CY-d5-WYN">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="83.5"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                <state key="normal" title="Break Start">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="breakButtonPressed:" destination="BgM-Pv-0XY" eventType="touchUpInside" id="exc-Tr-Bhi"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8245730996131897" green="0.93815010786056519" blue="0.95424586534500122" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vtm-ct-gnw" firstAttribute="trailing" secondItem="AGr-93-zBU" secondAttribute="trailing" constant="20" id="BxZ-Yk-1Vz"/>
+                            <constraint firstItem="AGr-93-zBU" firstAttribute="leading" secondItem="vtm-ct-gnw" secondAttribute="leading" constant="20" id="FfR-6c-prN"/>
+                            <constraint firstItem="tLT-a1-zCu" firstAttribute="leading" secondItem="vtm-ct-gnw" secondAttribute="leading" constant="20" id="GjD-3J-i6o"/>
+                            <constraint firstItem="3MN-Ap-kKV" firstAttribute="leading" secondItem="AGr-93-zBU" secondAttribute="leading" id="HxL-JF-CWD"/>
+                            <constraint firstItem="vtm-ct-gnw" firstAttribute="trailing" secondItem="tLT-a1-zCu" secondAttribute="trailing" constant="20" id="KPo-GR-mha"/>
+                            <constraint firstItem="3MN-Ap-kKV" firstAttribute="leading" secondItem="vtm-ct-gnw" secondAttribute="leading" constant="20" id="OG2-SY-PeH"/>
+                            <constraint firstItem="3MN-Ap-kKV" firstAttribute="trailing" secondItem="AGr-93-zBU" secondAttribute="trailing" id="Pky-qh-3yb"/>
+                            <constraint firstItem="3MN-Ap-kKV" firstAttribute="trailing" secondItem="tLT-a1-zCu" secondAttribute="trailing" id="XHJ-m9-dCk"/>
+                            <constraint firstItem="3MN-Ap-kKV" firstAttribute="leading" secondItem="tLT-a1-zCu" secondAttribute="leading" id="eem-ML-CWu"/>
+                            <constraint firstItem="vtm-ct-gnw" firstAttribute="bottom" secondItem="3MN-Ap-kKV" secondAttribute="bottom" constant="196" id="h56-bn-rUq"/>
+                            <constraint firstItem="tLT-a1-zCu" firstAttribute="top" secondItem="AGr-93-zBU" secondAttribute="bottom" constant="90" id="iuu-0r-ctx"/>
+                            <constraint firstItem="vtm-ct-gnw" firstAttribute="trailing" secondItem="3MN-Ap-kKV" secondAttribute="trailing" constant="20" id="nVE-mJ-ofV"/>
+                            <constraint firstItem="3MN-Ap-kKV" firstAttribute="top" secondItem="VBX-dS-xef" secondAttribute="top" constant="441" id="q6p-9Z-MyW"/>
+                            <constraint firstItem="AGr-93-zBU" firstAttribute="top" secondItem="vtm-ct-gnw" secondAttribute="top" constant="55" id="xyg-Dw-QLE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vtm-ct-gnw"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Clock In" image="ClockInLogo" id="FVe-mi-PSo"/>
+                    <navigationItem key="navigationItem" title="Clock In" id="gtI-wr-yG1"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="DateLbl" destination="AGr-93-zBU" id="7q0-aV-Slu"/>
+                        <outlet property="TimeLbl" destination="tLT-a1-zCu" id="sMY-C6-cGK"/>
+                        <outlet property="breakButton" destination="2CY-d5-WYN" id="xOq-tj-vGB"/>
+                        <outlet property="clockInButton" destination="8XU-AB-bg2" id="gcZ-AP-9XX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r6C-TM-UIo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="466.66666666666669" y="865.84821428571422"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="D3c-Tc-waj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" interfaceStyle="light" id="xFi-yc-hT6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0ak-WJ-Zyt">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BgM-Pv-0XY" kind="relationship" relationship="rootViewController" id="Gf9-3j-4Va"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y4c-hJ-XW3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-426.08695652173918" y="865.84821428571422"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ClockInLogo" width="25" height="25"/>
+    </resources>
+</document>
