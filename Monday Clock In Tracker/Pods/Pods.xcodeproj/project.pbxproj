@@ -1,0 +1,907 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05F06B509BF2BBD7F3B8811AEA78FEB3 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F95DBCC81EA9B77A82EE3E51DA470B /* Operators.swift */; };
+		063D35B22E11F04B4841E782DA9E8BB7 /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748BCA8456A3D0106CD236E0074BBB38 /* Query.swift */; };
+		0BD12E9078D1159E6E1032D39C95E7FE /* Statement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDA286341A828016A55ACCD7C4198AF /* Statement.swift */; };
+		1FFB28D21A0D19841A5B802D25D5CBA9 /* SQLite.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD7F369D9063BEFA384B285182DB9B59 /* SQLite.swift-dummy.m */; };
+		2143A606D2544CB0F19582844E5120A7 /* Pods-Monday Clock In Tracker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C11FFC7301C3326ECB7A8708E887B85 /* Pods-Monday Clock In Tracker-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2AD3C6DE9778DB2972EEB9C40191D4A1 /* CustomFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170304BE8B434FEC208B79DD71D28144 /* CustomFunctions.swift */; };
+		31AF5AEBD5B1E7D9BA13C33DA9CAC6EF /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D462B6C738F749F24B311F980676DE /* Helpers.swift */; };
+		38D38A1A8FF5F6D69E0B0392A81349AA /* Setter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627200A1765415C13A1330B3499A7140 /* Setter.swift */; };
+		391512EAF0E5324171CDABDDE341960B /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F087E4F6D942B362556B00193907125B /* Connection.swift */; };
+		3E24F37289624C75C60EE7102102EF70 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6162D2AB6ED70A495CFA8FE54DE3197 /* Errors.swift */; };
+		4341191758FEDD8CE8B240AA62CD28A7 /* Expression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1AF4D7F42592ACAC4417FCD16BF8DE /* Expression.swift */; };
+		4B6596084F650CEF256E9FB7789B1A84 /* Pods-Monday Clock In TrackerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9079C07D2FB8FA19CFE4E82455DB756F /* Pods-Monday Clock In TrackerUITests-dummy.m */; };
+		53FC36EC0AE4FE36F7703E34DEF51E36 /* AggregateFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E0C51824B091AC0ACD4952C4681FDA /* AggregateFunctions.swift */; };
+		5405D125C64322B5C60058DCC9580248 /* Collation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A39108D1338565203C7278D4A3340C6 /* Collation.swift */; };
+		58670BDA59BC1476ECD1AE42A65DEDB4 /* SQLiteObjc.h in Headers */ = {isa = PBXBuildFile; fileRef = C49301B6C5634A528491C353E39C3112 /* SQLiteObjc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		66DD1A11867D8EAA01E70DC735F8801E /* FTS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA44F67C17705799C39657CCFF6EAC4 /* FTS5.swift */; };
+		7366AF2575354E1D2C5BF4491F5F9417 /* Blob.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8DEB95D475869EA965478CD8CCE482 /* Blob.swift */; };
+		7C223CCCA8FDA2AFC24233CF2C80D507 /* fts3_tokenizer.h in Headers */ = {isa = PBXBuildFile; fileRef = BB54C8933E88483AAC0CE40A202F089E /* fts3_tokenizer.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7F9143F46F9E7896DEB46693296F7345 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10606FEE6F8098319DE35434104BE0F /* Value.swift */; };
+		8BE5D78D592FF07F4962B70D2013C31F /* Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A75C43EE518A75CA3CD87EAD174C9E5 /* Foundation.swift */; };
+		9A9596F5E4AA454390A98D6217A4D71A /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC88EAC522E27AD940EC1D0DCDE335F9 /* Schema.swift */; };
+		9E627DD9FB0352876EEDECC2A163F785 /* SQLiteObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFA34A11FE62A4921426CABC02BE451 /* SQLiteObjc.m */; };
+		B416A8E299446B94EE80482777E444EB /* DateAndTimeFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0FEA0B155C473BABD4C5E2795765E7 /* DateAndTimeFunctions.swift */; };
+		B69EA6264044412D6729801B01D713C7 /* FTS4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917253354548A2161468FFEE48E9AABF /* FTS4.swift */; };
+		BFF536B78DC4850A4A285C1D03F56057 /* SQLite.h in Headers */ = {isa = PBXBuildFile; fileRef = F88F13067321D361F150816803300E29 /* SQLite.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CB0E7E0835E7E26C8558DC0EDDE0E57D /* CoreFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CE3E7941EEDFEB5457D09EA2A22D79 /* CoreFunctions.swift */; };
+		CF028D4146B0DD677C3393340AD6448A /* RTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED100ED75370FAB2DA3BD6E69537D7A /* RTree.swift */; };
+		D6C33A43635EF4084FF6B68311612B09 /* Pods-Monday Clock In TrackerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1E7D2FC2060FD76169611344396AAE /* Pods-Monday Clock In TrackerTests-dummy.m */; };
+		D8F6B32F6E761A560319B19086DD3C29 /* Coding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EBEA0D3C739737B5BAC4FB7F1FDE6C /* Coding.swift */; };
+		DB5891014AF5583F4CE70D67063FEBF4 /* SQLite.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C35EC4F91E448D2472EE026C1BF1A30 /* SQLite.swift-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EBFF390C137AB75D361732ED364EB4C6 /* Pods-Monday Clock In Tracker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61FDABFD10E98FE39254A76860DA40D7 /* Pods-Monday Clock In Tracker-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		090D0BA4695519E1B32386F2BB5CC943 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F2C1776D90B62B156DB52C41A5C419C;
+			remoteInfo = SQLite.swift;
+		};
+		60E237EFDDEA9FD19A29321E2362E24C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32D165DAE0A3E1805BE5171D6873FFC6;
+			remoteInfo = "Pods-Monday Clock In Tracker";
+		};
+		F0100CA315C59047B8231A01FB3DFEFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32D165DAE0A3E1805BE5171D6873FFC6;
+			remoteInfo = "Pods-Monday Clock In Tracker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03F95DBCC81EA9B77A82EE3E51DA470B /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/SQLite/Typed/Operators.swift; sourceTree = "<group>"; };
+		0F35AD231592BBBC218A041A749F0B25 /* Pods-Monday Clock In TrackerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Monday Clock In TrackerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		10E0C51824B091AC0ACD4952C4681FDA /* AggregateFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AggregateFunctions.swift; path = Sources/SQLite/Typed/AggregateFunctions.swift; sourceTree = "<group>"; };
+		168FFE8FECFDAA12E5178A7940B3F21A /* Pods-Monday Clock In TrackerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Monday Clock In TrackerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		170304BE8B434FEC208B79DD71D28144 /* CustomFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomFunctions.swift; path = Sources/SQLite/Typed/CustomFunctions.swift; sourceTree = "<group>"; };
+		20EBEA0D3C739737B5BAC4FB7F1FDE6C /* Coding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Coding.swift; path = Sources/SQLite/Typed/Coding.swift; sourceTree = "<group>"; };
+		293ED4990DDE16285D2A26D99C9B20EB /* SQLite.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-prefix.pch"; sourceTree = "<group>"; };
+		2E1AF4D7F42592ACAC4417FCD16BF8DE /* Expression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Expression.swift; path = Sources/SQLite/Typed/Expression.swift; sourceTree = "<group>"; };
+		34C6BB848837B70509EB6FAC02FE591A /* Pods-Monday Clock In Tracker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Monday Clock In Tracker-acknowledgements.plist"; sourceTree = "<group>"; };
+		3A75C43EE518A75CA3CD87EAD174C9E5 /* Foundation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Foundation.swift; path = Sources/SQLite/Foundation.swift; sourceTree = "<group>"; };
+		3C35EC4F91E448D2472EE026C1BF1A30 /* SQLite.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SQLite.swift-umbrella.h"; sourceTree = "<group>"; };
+		41CE3E7941EEDFEB5457D09EA2A22D79 /* CoreFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreFunctions.swift; path = Sources/SQLite/Typed/CoreFunctions.swift; sourceTree = "<group>"; };
+		49D462B6C738F749F24B311F980676DE /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Sources/SQLite/Helpers.swift; sourceTree = "<group>"; };
+		61FDABFD10E98FE39254A76860DA40D7 /* Pods-Monday Clock In Tracker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Monday Clock In Tracker-dummy.m"; sourceTree = "<group>"; };
+		627200A1765415C13A1330B3499A7140 /* Setter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Setter.swift; path = Sources/SQLite/Typed/Setter.swift; sourceTree = "<group>"; };
+		6876FD2A183E3D3DE2DD1FBD4DA1A0DF /* SQLite.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SQLite.swift.modulemap; sourceTree = "<group>"; };
+		6A39108D1338565203C7278D4A3340C6 /* Collation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collation.swift; path = Sources/SQLite/Typed/Collation.swift; sourceTree = "<group>"; };
+		6F14DFAD5CFC00433FECA3750C6E0BA5 /* Pods-Monday Clock In TrackerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Monday Clock In TrackerTests.release.xcconfig"; sourceTree = "<group>"; };
+		6FC6BA8C1ABCDF7EE540782A8F5F65AF /* Pods-Monday Clock In Tracker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Monday Clock In Tracker-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7122E7577061F40C46F9B96197011883 /* Pods-Monday Clock In TrackerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Monday Clock In TrackerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		748BCA8456A3D0106CD236E0074BBB38 /* Query.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Query.swift; path = Sources/SQLite/Typed/Query.swift; sourceTree = "<group>"; };
+		75FFDAA9DE1C210814D3DB3D9B484655 /* Pods-Monday Clock In TrackerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Monday Clock In TrackerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7C11FFC7301C3326ECB7A8708E887B85 /* Pods-Monday Clock In Tracker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Monday Clock In Tracker-umbrella.h"; sourceTree = "<group>"; };
+		826C2B4B38C9D057B2A802D5147B6F52 /* libPods-Monday Clock In Tracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Monday Clock In Tracker.a"; path = "libPods-Monday Clock In Tracker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		836CD0DE46A13E14DD4FAE8099439C83 /* SQLite.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SQLite.swift.xcconfig; sourceTree = "<group>"; };
+		9079C07D2FB8FA19CFE4E82455DB756F /* Pods-Monday Clock In TrackerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Monday Clock In TrackerUITests-dummy.m"; sourceTree = "<group>"; };
+		917253354548A2161468FFEE48E9AABF /* FTS4.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS4.swift; path = Sources/SQLite/Extensions/FTS4.swift; sourceTree = "<group>"; };
+		9D2CF92A2D27ED59D1707640AD700166 /* Pods-Monday Clock In TrackerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Monday Clock In TrackerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F95C8FF0C737C5974BF1405DC9F8EE0 /* libPods-Monday Clock In TrackerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Monday Clock In TrackerTests.a"; path = "libPods-Monday Clock In TrackerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA1AA5A6BC71066713D6B7FA829544AD /* Pods-Monday Clock In Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Monday Clock In Tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		AD7F369D9063BEFA384B285182DB9B59 /* SQLite.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SQLite.swift-dummy.m"; sourceTree = "<group>"; };
+		AFA44F67C17705799C39657CCFF6EAC4 /* FTS5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FTS5.swift; path = Sources/SQLite/Extensions/FTS5.swift; sourceTree = "<group>"; };
+		B8C73C509D59D90885A0BCAB629E44B5 /* Pods-Monday Clock In TrackerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Monday Clock In TrackerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BB54C8933E88483AAC0CE40A202F089E /* fts3_tokenizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fts3_tokenizer.h; path = Sources/SQLiteObjc/fts3_tokenizer.h; sourceTree = "<group>"; };
+		C1163B2159B08E6798779550A44EA0BA /* libPods-Monday Clock In TrackerUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Monday Clock In TrackerUITests.a"; path = "libPods-Monday Clock In TrackerUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C39F9FB8B3E3E5333A495D29C6581D61 /* Pods-Monday Clock In Tracker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Monday Clock In Tracker.modulemap"; sourceTree = "<group>"; };
+		C49301B6C5634A528491C353E39C3112 /* SQLiteObjc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLiteObjc.h; path = Sources/SQLiteObjc/include/SQLiteObjc.h; sourceTree = "<group>"; };
+		CCFA34A11FE62A4921426CABC02BE451 /* SQLiteObjc.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SQLiteObjc.m; path = Sources/SQLiteObjc/SQLiteObjc.m; sourceTree = "<group>"; };
+		CED100ED75370FAB2DA3BD6E69537D7A /* RTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RTree.swift; path = Sources/SQLite/Extensions/RTree.swift; sourceTree = "<group>"; };
+		DC88EAC522E27AD940EC1D0DCDE335F9 /* Schema.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Schema.swift; path = Sources/SQLite/Typed/Schema.swift; sourceTree = "<group>"; };
+		DE64DFA6CE7C42FF01FF334E3FE500BD /* Pods-Monday Clock In Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Monday Clock In Tracker.release.xcconfig"; sourceTree = "<group>"; };
+		E10606FEE6F8098319DE35434104BE0F /* Value.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Value.swift; path = Sources/SQLite/Core/Value.swift; sourceTree = "<group>"; };
+		EA1E7D2FC2060FD76169611344396AAE /* Pods-Monday Clock In TrackerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Monday Clock In TrackerTests-dummy.m"; sourceTree = "<group>"; };
+		EB8DEB95D475869EA965478CD8CCE482 /* Blob.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Blob.swift; path = Sources/SQLite/Core/Blob.swift; sourceTree = "<group>"; };
+		F087E4F6D942B362556B00193907125B /* Connection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Connection.swift; path = Sources/SQLite/Core/Connection.swift; sourceTree = "<group>"; };
+		F5FA45A44C42CC2CA3A324A3E914CE19 /* libSQLite.swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSQLite.swift.a; path = libSQLite.swift.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6162D2AB6ED70A495CFA8FE54DE3197 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/SQLite/Core/Errors.swift; sourceTree = "<group>"; };
+		F88F13067321D361F150816803300E29 /* SQLite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SQLite.h; path = Sources/SQLite/SQLite.h; sourceTree = "<group>"; };
+		FBDA286341A828016A55ACCD7C4198AF /* Statement.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Statement.swift; path = Sources/SQLite/Core/Statement.swift; sourceTree = "<group>"; };
+		FC10D445615EA6E70B5A34FF9F939304 /* Pods-Monday Clock In TrackerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Monday Clock In TrackerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE0FEA0B155C473BABD4C5E2795765E7 /* DateAndTimeFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateAndTimeFunctions.swift; path = Sources/SQLite/Typed/DateAndTimeFunctions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		348848001F268F281562859B7CEA70C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61EA94956FDDECA65538481AB8A94179 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E6F56551D35482FE1861B7C021F61A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6032E7EE22249D0C3D613EE52747A53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		058875590C9095DF47D324AF6B79B025 /* SQLite.swift */ = {
+			isa = PBXGroup;
+			children = (
+				CE66574D83E17527235C03DE2CC8F312 /* standard */,
+				DB71534754E0B9BCC14FA890E26C0A82 /* Support Files */,
+			);
+			name = SQLite.swift;
+			path = SQLite.swift;
+			sourceTree = "<group>";
+		};
+		1B80B5E3862243DD1A0E159316BB4202 /* Pods-Monday Clock In TrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				0F35AD231592BBBC218A041A749F0B25 /* Pods-Monday Clock In TrackerTests-acknowledgements.markdown */,
+				168FFE8FECFDAA12E5178A7940B3F21A /* Pods-Monday Clock In TrackerTests-acknowledgements.plist */,
+				EA1E7D2FC2060FD76169611344396AAE /* Pods-Monday Clock In TrackerTests-dummy.m */,
+				9D2CF92A2D27ED59D1707640AD700166 /* Pods-Monday Clock In TrackerTests.debug.xcconfig */,
+				6F14DFAD5CFC00433FECA3750C6E0BA5 /* Pods-Monday Clock In TrackerTests.release.xcconfig */,
+			);
+			name = "Pods-Monday Clock In TrackerTests";
+			path = "Target Support Files/Pods-Monday Clock In TrackerTests";
+			sourceTree = "<group>";
+		};
+		41109BBCA0FE0B11A5CE598680229EDC /* Pods-Monday Clock In TrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				75FFDAA9DE1C210814D3DB3D9B484655 /* Pods-Monday Clock In TrackerUITests-acknowledgements.markdown */,
+				B8C73C509D59D90885A0BCAB629E44B5 /* Pods-Monday Clock In TrackerUITests-acknowledgements.plist */,
+				9079C07D2FB8FA19CFE4E82455DB756F /* Pods-Monday Clock In TrackerUITests-dummy.m */,
+				FC10D445615EA6E70B5A34FF9F939304 /* Pods-Monday Clock In TrackerUITests.debug.xcconfig */,
+				7122E7577061F40C46F9B96197011883 /* Pods-Monday Clock In TrackerUITests.release.xcconfig */,
+			);
+			name = "Pods-Monday Clock In TrackerUITests";
+			path = "Target Support Files/Pods-Monday Clock In TrackerUITests";
+			sourceTree = "<group>";
+		};
+		50A4B9D91B74E16D9BC1259601C8111E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				826C2B4B38C9D057B2A802D5147B6F52 /* libPods-Monday Clock In Tracker.a */,
+				9F95C8FF0C737C5974BF1405DC9F8EE0 /* libPods-Monday Clock In TrackerTests.a */,
+				C1163B2159B08E6798779550A44EA0BA /* libPods-Monday Clock In TrackerUITests.a */,
+				F5FA45A44C42CC2CA3A324A3E914CE19 /* libSQLite.swift.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C7F1875E201FDD0DED29CB3994FA086 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				058875590C9095DF47D324AF6B79B025 /* SQLite.swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B7B351CE18D09BE24B74BBBA1ECC08D7 /* Pods-Monday Clock In Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				C39F9FB8B3E3E5333A495D29C6581D61 /* Pods-Monday Clock In Tracker.modulemap */,
+				6FC6BA8C1ABCDF7EE540782A8F5F65AF /* Pods-Monday Clock In Tracker-acknowledgements.markdown */,
+				34C6BB848837B70509EB6FAC02FE591A /* Pods-Monday Clock In Tracker-acknowledgements.plist */,
+				61FDABFD10E98FE39254A76860DA40D7 /* Pods-Monday Clock In Tracker-dummy.m */,
+				7C11FFC7301C3326ECB7A8708E887B85 /* Pods-Monday Clock In Tracker-umbrella.h */,
+				AA1AA5A6BC71066713D6B7FA829544AD /* Pods-Monday Clock In Tracker.debug.xcconfig */,
+				DE64DFA6CE7C42FF01FF334E3FE500BD /* Pods-Monday Clock In Tracker.release.xcconfig */,
+			);
+			name = "Pods-Monday Clock In Tracker";
+			path = "Target Support Files/Pods-Monday Clock In Tracker";
+			sourceTree = "<group>";
+		};
+		CE66574D83E17527235C03DE2CC8F312 /* standard */ = {
+			isa = PBXGroup;
+			children = (
+				10E0C51824B091AC0ACD4952C4681FDA /* AggregateFunctions.swift */,
+				EB8DEB95D475869EA965478CD8CCE482 /* Blob.swift */,
+				20EBEA0D3C739737B5BAC4FB7F1FDE6C /* Coding.swift */,
+				6A39108D1338565203C7278D4A3340C6 /* Collation.swift */,
+				F087E4F6D942B362556B00193907125B /* Connection.swift */,
+				41CE3E7941EEDFEB5457D09EA2A22D79 /* CoreFunctions.swift */,
+				170304BE8B434FEC208B79DD71D28144 /* CustomFunctions.swift */,
+				FE0FEA0B155C473BABD4C5E2795765E7 /* DateAndTimeFunctions.swift */,
+				F6162D2AB6ED70A495CFA8FE54DE3197 /* Errors.swift */,
+				2E1AF4D7F42592ACAC4417FCD16BF8DE /* Expression.swift */,
+				3A75C43EE518A75CA3CD87EAD174C9E5 /* Foundation.swift */,
+				BB54C8933E88483AAC0CE40A202F089E /* fts3_tokenizer.h */,
+				917253354548A2161468FFEE48E9AABF /* FTS4.swift */,
+				AFA44F67C17705799C39657CCFF6EAC4 /* FTS5.swift */,
+				49D462B6C738F749F24B311F980676DE /* Helpers.swift */,
+				03F95DBCC81EA9B77A82EE3E51DA470B /* Operators.swift */,
+				748BCA8456A3D0106CD236E0074BBB38 /* Query.swift */,
+				CED100ED75370FAB2DA3BD6E69537D7A /* RTree.swift */,
+				DC88EAC522E27AD940EC1D0DCDE335F9 /* Schema.swift */,
+				627200A1765415C13A1330B3499A7140 /* Setter.swift */,
+				F88F13067321D361F150816803300E29 /* SQLite.h */,
+				C49301B6C5634A528491C353E39C3112 /* SQLiteObjc.h */,
+				CCFA34A11FE62A4921426CABC02BE451 /* SQLiteObjc.m */,
+				FBDA286341A828016A55ACCD7C4198AF /* Statement.swift */,
+				E10606FEE6F8098319DE35434104BE0F /* Value.swift */,
+			);
+			name = standard;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				9C7F1875E201FDD0DED29CB3994FA086 /* Pods */,
+				50A4B9D91B74E16D9BC1259601C8111E /* Products */,
+				F2EBD5A45F079624999D04EA975E2B66 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB71534754E0B9BCC14FA890E26C0A82 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6876FD2A183E3D3DE2DD1FBD4DA1A0DF /* SQLite.swift.modulemap */,
+				836CD0DE46A13E14DD4FAE8099439C83 /* SQLite.swift.xcconfig */,
+				AD7F369D9063BEFA384B285182DB9B59 /* SQLite.swift-dummy.m */,
+				293ED4990DDE16285D2A26D99C9B20EB /* SQLite.swift-prefix.pch */,
+				3C35EC4F91E448D2472EE026C1BF1A30 /* SQLite.swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SQLite.swift";
+			sourceTree = "<group>";
+		};
+		F2EBD5A45F079624999D04EA975E2B66 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7B351CE18D09BE24B74BBBA1ECC08D7 /* Pods-Monday Clock In Tracker */,
+				1B80B5E3862243DD1A0E159316BB4202 /* Pods-Monday Clock In TrackerTests */,
+				41109BBCA0FE0B11A5CE598680229EDC /* Pods-Monday Clock In TrackerUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		051C83D1C8DD75E2A550B038FCE941EC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		315A7D573EBF061BE152C55E94884DE6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2143A606D2544CB0F19582844E5120A7 /* Pods-Monday Clock In Tracker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D89663E2DB8D7DD0634E5C6BF3CD44A2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C223CCCA8FDA2AFC24233CF2C80D507 /* fts3_tokenizer.h in Headers */,
+				BFF536B78DC4850A4A285C1D03F56057 /* SQLite.h in Headers */,
+				DB5891014AF5583F4CE70D67063FEBF4 /* SQLite.swift-umbrella.h in Headers */,
+				58670BDA59BC1476ECD1AE42A65DEDB4 /* SQLiteObjc.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD9AEE19F7A6B5E7153391A3217C2D4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		32D165DAE0A3E1805BE5171D6873FFC6 /* Pods-Monday Clock In Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43022248BAE35859E9C996BCF9367D9D /* Build configuration list for PBXNativeTarget "Pods-Monday Clock In Tracker" */;
+			buildPhases = (
+				315A7D573EBF061BE152C55E94884DE6 /* Headers */,
+				45EC7EBF5B54718E6C9CFDF8D883D8B3 /* Sources */,
+				348848001F268F281562859B7CEA70C7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5B2B70D942FC7A5E4AF031410FABA38 /* PBXTargetDependency */,
+			);
+			name = "Pods-Monday Clock In Tracker";
+			productName = "Pods-Monday Clock In Tracker";
+			productReference = 826C2B4B38C9D057B2A802D5147B6F52 /* libPods-Monday Clock In Tracker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3F2C1776D90B62B156DB52C41A5C419C /* SQLite.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4831832D716DE9C50FF96385B6482F4A /* Build configuration list for PBXNativeTarget "SQLite.swift" */;
+			buildPhases = (
+				D89663E2DB8D7DD0634E5C6BF3CD44A2 /* Headers */,
+				6BF8A13BF7ED83F383C551CFCCA53777 /* Sources */,
+				83E6F56551D35482FE1861B7C021F61A /* Frameworks */,
+				FBDBDFFAD990AD9508B3EFA011AEFC86 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SQLite.swift;
+			productName = SQLite.swift;
+			productReference = F5FA45A44C42CC2CA3A324A3E914CE19 /* libSQLite.swift.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		583BC1D5B8B811F6F2B661D79B75D4EC /* Pods-Monday Clock In TrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5DB22D6755845BA9484607951D87452 /* Build configuration list for PBXNativeTarget "Pods-Monday Clock In TrackerUITests" */;
+			buildPhases = (
+				051C83D1C8DD75E2A550B038FCE941EC /* Headers */,
+				A288A192DE47D141C59688F341EF5673 /* Sources */,
+				B6032E7EE22249D0C3D613EE52747A53 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEA22129E280CBCD8FBDFC6FB5FFC6DE /* PBXTargetDependency */,
+			);
+			name = "Pods-Monday Clock In TrackerUITests";
+			productName = "Pods-Monday Clock In TrackerUITests";
+			productReference = C1163B2159B08E6798779550A44EA0BA /* libPods-Monday Clock In TrackerUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D570A648FDE12BBDA778B33EE415A4D0 /* Pods-Monday Clock In TrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABE4488B1B3C8C01BCB6208D5BD7C9C3 /* Build configuration list for PBXNativeTarget "Pods-Monday Clock In TrackerTests" */;
+			buildPhases = (
+				DD9AEE19F7A6B5E7153391A3217C2D4F /* Headers */,
+				33E9B4A6DFF10B8BAF52CEFACF09A3EF /* Sources */,
+				61EA94956FDDECA65538481AB8A94179 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC50071612EDB48E193BAB5450D7D614 /* PBXTargetDependency */,
+			);
+			name = "Pods-Monday Clock In TrackerTests";
+			productName = "Pods-Monday Clock In TrackerTests";
+			productReference = 9F95C8FF0C737C5974BF1405DC9F8EE0 /* libPods-Monday Clock In TrackerTests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 50A4B9D91B74E16D9BC1259601C8111E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32D165DAE0A3E1805BE5171D6873FFC6 /* Pods-Monday Clock In Tracker */,
+				D570A648FDE12BBDA778B33EE415A4D0 /* Pods-Monday Clock In TrackerTests */,
+				583BC1D5B8B811F6F2B661D79B75D4EC /* Pods-Monday Clock In TrackerUITests */,
+				3F2C1776D90B62B156DB52C41A5C419C /* SQLite.swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FBDBDFFAD990AD9508B3EFA011AEFC86 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/SQLite/SQLite.swift.modulemap",
+				"${PODS_ROOT}/Headers/Public/SQLite/SQLite.swift-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/SQLite.swift-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SQLite/SQLite.swift.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SQLite/SQLite.swift-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33E9B4A6DFF10B8BAF52CEFACF09A3EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C33A43635EF4084FF6B68311612B09 /* Pods-Monday Clock In TrackerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45EC7EBF5B54718E6C9CFDF8D883D8B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBFF390C137AB75D361732ED364EB4C6 /* Pods-Monday Clock In Tracker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BF8A13BF7ED83F383C551CFCCA53777 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53FC36EC0AE4FE36F7703E34DEF51E36 /* AggregateFunctions.swift in Sources */,
+				7366AF2575354E1D2C5BF4491F5F9417 /* Blob.swift in Sources */,
+				D8F6B32F6E761A560319B19086DD3C29 /* Coding.swift in Sources */,
+				5405D125C64322B5C60058DCC9580248 /* Collation.swift in Sources */,
+				391512EAF0E5324171CDABDDE341960B /* Connection.swift in Sources */,
+				CB0E7E0835E7E26C8558DC0EDDE0E57D /* CoreFunctions.swift in Sources */,
+				2AD3C6DE9778DB2972EEB9C40191D4A1 /* CustomFunctions.swift in Sources */,
+				B416A8E299446B94EE80482777E444EB /* DateAndTimeFunctions.swift in Sources */,
+				3E24F37289624C75C60EE7102102EF70 /* Errors.swift in Sources */,
+				4341191758FEDD8CE8B240AA62CD28A7 /* Expression.swift in Sources */,
+				8BE5D78D592FF07F4962B70D2013C31F /* Foundation.swift in Sources */,
+				B69EA6264044412D6729801B01D713C7 /* FTS4.swift in Sources */,
+				66DD1A11867D8EAA01E70DC735F8801E /* FTS5.swift in Sources */,
+				31AF5AEBD5B1E7D9BA13C33DA9CAC6EF /* Helpers.swift in Sources */,
+				05F06B509BF2BBD7F3B8811AEA78FEB3 /* Operators.swift in Sources */,
+				063D35B22E11F04B4841E782DA9E8BB7 /* Query.swift in Sources */,
+				CF028D4146B0DD677C3393340AD6448A /* RTree.swift in Sources */,
+				9A9596F5E4AA454390A98D6217A4D71A /* Schema.swift in Sources */,
+				38D38A1A8FF5F6D69E0B0392A81349AA /* Setter.swift in Sources */,
+				1FFB28D21A0D19841A5B802D25D5CBA9 /* SQLite.swift-dummy.m in Sources */,
+				9E627DD9FB0352876EEDECC2A163F785 /* SQLiteObjc.m in Sources */,
+				0BD12E9078D1159E6E1032D39C95E7FE /* Statement.swift in Sources */,
+				7F9143F46F9E7896DEB46693296F7345 /* Value.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A288A192DE47D141C59688F341EF5673 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B6596084F650CEF256E9FB7789B1A84 /* Pods-Monday Clock In TrackerUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5B2B70D942FC7A5E4AF031410FABA38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLite.swift;
+			target = 3F2C1776D90B62B156DB52C41A5C419C /* SQLite.swift */;
+			targetProxy = 090D0BA4695519E1B32386F2BB5CC943 /* PBXContainerItemProxy */;
+		};
+		DEA22129E280CBCD8FBDFC6FB5FFC6DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Monday Clock In Tracker";
+			target = 32D165DAE0A3E1805BE5171D6873FFC6 /* Pods-Monday Clock In Tracker */;
+			targetProxy = F0100CA315C59047B8231A01FB3DFEFD /* PBXContainerItemProxy */;
+		};
+		FC50071612EDB48E193BAB5450D7D614 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Monday Clock In Tracker";
+			target = 32D165DAE0A3E1805BE5171D6873FFC6 /* Pods-Monday Clock In Tracker */;
+			targetProxy = 60E237EFDDEA9FD19A29321E2362E24C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		3C6AD395D24462F4646C0CE286CDA8A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2CF92A2D27ED59D1707640AD700166 /* Pods-Monday Clock In TrackerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3EFB03A13FEFEF724BFE78C5C76AAEDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836CD0DE46A13E14DD4FAE8099439C83 /* SQLite.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/SQLite/SQLite.swift.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SQLite;
+				PRODUCT_NAME = SQLite.swift;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		66D9C899368D8564E0962E6B1D16C014 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7122E7577061F40C46F9B96197011883 /* Pods-Monday Clock In TrackerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6EA6CA90E56752E703A24437B50B964B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE64DFA6CE7C42FF01FF334E3FE500BD /* Pods-Monday Clock In Tracker.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Monday Clock In Tracker/Pods-Monday Clock In Tracker.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7595AA9259B37AC3A7B2CC0A10F81DD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA1AA5A6BC71066713D6B7FA829544AD /* Pods-Monday Clock In Tracker.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Monday Clock In Tracker/Pods-Monday Clock In Tracker.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8259216F0A8B58B7D5CF3E15799258F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 836CD0DE46A13E14DD4FAE8099439C83 /* SQLite.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SQLite.swift/SQLite.swift-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/SQLite/SQLite.swift.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SQLite;
+				PRODUCT_NAME = SQLite.swift;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC47DE55461546CF21DF76463F18F8EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F14DFAD5CFC00433FECA3750C6E0BA5 /* Pods-Monday Clock In TrackerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC7A5CE9177D3BA6754D1E03B4727F6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC10D445615EA6E70B5A34FF9F939304 /* Pods-Monday Clock In TrackerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43022248BAE35859E9C996BCF9367D9D /* Build configuration list for PBXNativeTarget "Pods-Monday Clock In Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7595AA9259B37AC3A7B2CC0A10F81DD7 /* Debug */,
+				6EA6CA90E56752E703A24437B50B964B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4831832D716DE9C50FF96385B6482F4A /* Build configuration list for PBXNativeTarget "SQLite.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8259216F0A8B58B7D5CF3E15799258F0 /* Debug */,
+				3EFB03A13FEFEF724BFE78C5C76AAEDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5DB22D6755845BA9484607951D87452 /* Build configuration list for PBXNativeTarget "Pods-Monday Clock In TrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7A5CE9177D3BA6754D1E03B4727F6F /* Debug */,
+				66D9C899368D8564E0962E6B1D16C014 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABE4488B1B3C8C01BCB6208D5BD7C9C3 /* Build configuration list for PBXNativeTarget "Pods-Monday Clock In TrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C6AD395D24462F4646C0CE286CDA8A9 /* Debug */,
+				BC47DE55461546CF21DF76463F18F8EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

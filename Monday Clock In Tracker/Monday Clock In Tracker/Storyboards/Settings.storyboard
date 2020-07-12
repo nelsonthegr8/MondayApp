@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JGA-jV-yNg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="JGA-jV-yNg">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,16 +14,61 @@
                     <view key="view" contentMode="scaleToFill" id="emJ-Ce-gJz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="LA0-uQ-EXL" userLabel="Horizontal Input">
+                                <rect key="frame" x="20" y="280.5" width="374" height="35"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay Rate:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwg-Ad-NKX">
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter pay rate" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lqr-Y8-8CL">
+                                        <rect key="frame" x="187" y="0.0" width="187" height="35"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQ8-gd-QCV">
+                                <rect key="frame" x="159" y="431" width="96" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="J2W-8x-F1f"/>
+                                    <constraint firstAttribute="width" constant="96" id="qe2-5B-sjU"/>
+                                </constraints>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitButtonClicked:" destination="gJw-kA-hTa" eventType="touchUpInside" id="5QL-ac-SsL"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.52661136139021925" green="0.61266319666511837" blue="0.66804806472081224" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="LA0-uQ-EXL" firstAttribute="centerX" secondItem="emJ-Ce-gJz" secondAttribute="centerX" id="JWx-JH-35n"/>
+                            <constraint firstItem="LA0-uQ-EXL" firstAttribute="centerY" secondItem="emJ-Ce-gJz" secondAttribute="centerY" constant="-150" id="Oa1-x4-7gv"/>
+                            <constraint firstItem="LA0-uQ-EXL" firstAttribute="leading" secondItem="emJ-Ce-gJz" secondAttribute="leading" constant="20" id="ROP-Js-AkJ"/>
+                            <constraint firstItem="gQ8-gd-QCV" firstAttribute="centerX" secondItem="emJ-Ce-gJz" secondAttribute="centerX" id="beH-VM-Ows"/>
+                            <constraint firstAttribute="trailing" secondItem="LA0-uQ-EXL" secondAttribute="trailing" constant="20" id="lBq-S4-Fq7"/>
+                            <constraint firstItem="gQ8-gd-QCV" firstAttribute="centerY" secondItem="emJ-Ce-gJz" secondAttribute="centerY" id="qsQ-fr-W4b"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="EdV-wW-cMI"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="SettingsLogo" id="DUf-KE-Wle"/>
                     <navigationItem key="navigationItem" title="Settings" id="m1w-Ok-pxA"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="payRate" destination="Lqr-Y8-8CL" id="CPW-PJ-Jbg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KAR-LX-tv9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2300" y="884"/>
+            <point key="canvasLocation" x="2298.5507246376815" y="883.92857142857144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5eD-g2-dEn">

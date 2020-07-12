@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q7H-gc-cNm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q7H-gc-cNm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -24,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="-310" y="875"/>
         </scene>
-        <!--Something-->
+        <!--Add Clock In Entry-->
         <scene sceneID="F7k-cR-S1x">
             <objects>
                 <viewController storyboardIdentifier="BreakViewController" id="4dV-H5-dgg" customClass="BreakViewController" customModule="Monday" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,45 +31,194 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVV-KO-iDF">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="createInserts:" destination="4dV-H5-dgg" eventType="touchUpInside" id="zhT-Dy-dAN"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGn-TO-ANs">
-                                <rect key="frame" x="170" y="269" width="75" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Test Query"/>
-                                <connections>
-                                    <action selector="test:" destination="4dV-H5-dgg" eventType="touchUpInside" id="bPa-Uh-qDn"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WY3-fE-pvw">
-                                <rect key="frame" x="20" y="544" width="374" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="srz-LR-Fkf">
+                                <rect key="frame" x="0.0" y="98" width="414" height="705"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGn-TO-ANs">
+                                        <rect key="frame" x="140" y="0.0" width="134" height="46"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Date">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dateButton:" destination="4dV-H5-dgg" eventType="touchUpInside" id="8I8-YA-ZCS"/>
+                                            <segue destination="fvS-Bf-IN1" kind="presentation" identifier="DateButtonSegue" id="TN4-ka-8on"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKb-BC-cA4">
+                                        <rect key="frame" x="0.0" y="66" width="414" height="46"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OkN-U3-f5e">
+                                        <rect key="frame" x="140" y="132" width="134" height="45.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="In Time">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="inTimeButton:" destination="4dV-H5-dgg" eventType="touchUpInside" id="QXI-X3-GMk"/>
+                                            <segue destination="fvS-Bf-IN1" kind="presentation" identifier="inTimeButtonSeque" id="wR6-O1-05Z"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keG-gn-Fmf">
+                                        <rect key="frame" x="0.0" y="197.5" width="414" height="46"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hrj-4i-etH">
+                                        <rect key="frame" x="140" y="263.5" width="134" height="46"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Out Time">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="outTimeButton:" destination="4dV-H5-dgg" eventType="touchUpInside" id="PkV-TO-lm8"/>
+                                            <segue destination="fvS-Bf-IN1" kind="presentation" identifier="outTimeButtonSegue" id="4ek-Mc-FaJ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xrk-U3-7Bi">
+                                        <rect key="frame" x="0.0" y="329.5" width="414" height="46"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNs-Q7-D27">
+                                        <rect key="frame" x="130" y="395.5" width="154" height="46"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Break In Time">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="breakInTime:" destination="4dV-H5-dgg" eventType="touchUpInside" id="7w6-if-7Sb"/>
+                                            <segue destination="fvS-Bf-IN1" kind="presentation" identifier="breakTimeButtonSeguq" id="dX2-Jl-IhV"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccx-cd-iNO">
+                                        <rect key="frame" x="0.0" y="461.5" width="414" height="46"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ki2-6V-dTE">
+                                        <rect key="frame" x="130" y="527.5" width="154" height="45.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Break Out Time">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="breakOutTime:" destination="4dV-H5-dgg" eventType="touchUpInside" id="03i-de-sjv"/>
+                                            <segue destination="fvS-Bf-IN1" kind="presentation" identifier="breakOutTimeButtonSegue" id="eUV-Bh-f4M"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cdf-2q-6c9">
+                                        <rect key="frame" x="0.0" y="593" width="414" height="46"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="Bnj-D9-1a0" userLabel="ActionLayout">
+                                        <rect key="frame" x="20" y="659" width="374" height="46"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOs-cb-yGx">
+                                                <rect key="frame" x="0.0" y="0.0" width="176.5" height="46"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Submit">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="SubmitInfo:" destination="4dV-H5-dgg" eventType="touchUpInside" id="1Jv-di-ft1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qce-py-o5h">
+                                                <rect key="frame" x="197.5" y="0.0" width="176.5" height="46"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Reset">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="ResetBtnPressed:" destination="4dV-H5-dgg" eventType="touchUpInside" id="YID-kT-Hyz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="OkN-U3-f5e" firstAttribute="leading" secondItem="srz-LR-Fkf" secondAttribute="leading" constant="140" id="0Yz-Ue-p4T"/>
+                                    <constraint firstAttribute="trailing" secondItem="Bnj-D9-1a0" secondAttribute="trailing" constant="20" id="0oo-Xw-HUF"/>
+                                    <constraint firstItem="LNs-Q7-D27" firstAttribute="leading" secondItem="srz-LR-Fkf" secondAttribute="leading" constant="130" id="6kX-Mt-FH6"/>
+                                    <constraint firstAttribute="trailing" secondItem="ccx-cd-iNO" secondAttribute="trailing" id="9iU-C7-StL"/>
+                                    <constraint firstItem="NGn-TO-ANs" firstAttribute="leading" secondItem="srz-LR-Fkf" secondAttribute="leading" constant="140" id="BR0-Sg-XhV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ki2-6V-dTE" secondAttribute="trailing" constant="130" id="CmD-bc-eXy"/>
+                                    <constraint firstAttribute="trailing" secondItem="LNs-Q7-D27" secondAttribute="trailing" constant="130" id="Eo2-Cm-gZS"/>
+                                    <constraint firstItem="Bnj-D9-1a0" firstAttribute="leading" secondItem="srz-LR-Fkf" secondAttribute="leading" constant="20" id="G7k-hY-ddx"/>
+                                    <constraint firstAttribute="trailing" secondItem="nKb-BC-cA4" secondAttribute="trailing" id="HDH-fh-gL0"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cdf-2q-6c9" secondAttribute="trailing" id="Hfg-TO-KAo"/>
+                                    <constraint firstAttribute="trailing" secondItem="OkN-U3-f5e" secondAttribute="trailing" constant="140" id="Hi7-0l-RBQ"/>
+                                    <constraint firstItem="Hrj-4i-etH" firstAttribute="leading" secondItem="srz-LR-Fkf" secondAttribute="leading" constant="140" id="LtZ-sR-Laf"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hrj-4i-etH" secondAttribute="trailing" constant="140" id="TNH-ch-uUu"/>
+                                    <constraint firstItem="Ki2-6V-dTE" firstAttribute="leading" secondItem="srz-LR-Fkf" secondAttribute="leading" constant="130" id="U4x-Xa-14n"/>
+                                    <constraint firstItem="Xrk-U3-7Bi" firstAttribute="leading" secondItem="srz-LR-Fkf" secondAttribute="leading" id="VEs-Of-zHP"/>
+                                    <constraint firstItem="Cdf-2q-6c9" firstAttribute="leading" secondItem="srz-LR-Fkf" secondAttribute="leading" id="WF6-sz-xZ6"/>
+                                    <constraint firstItem="keG-gn-Fmf" firstAttribute="leading" secondItem="srz-LR-Fkf" secondAttribute="leading" id="Yks-1g-fdl"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xrk-U3-7Bi" secondAttribute="trailing" id="ZlA-Rp-vwm"/>
+                                    <constraint firstItem="ccx-cd-iNO" firstAttribute="leading" secondItem="srz-LR-Fkf" secondAttribute="leading" id="bNE-xz-Byg"/>
+                                    <constraint firstAttribute="trailing" secondItem="keG-gn-Fmf" secondAttribute="trailing" id="gHK-n4-cnw"/>
+                                    <constraint firstItem="nKb-BC-cA4" firstAttribute="leading" secondItem="srz-LR-Fkf" secondAttribute="leading" id="lc0-QT-Hqy"/>
+                                    <constraint firstAttribute="trailing" secondItem="NGn-TO-ANs" secondAttribute="trailing" constant="140" id="q2Z-iA-rvX"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.3442869904463875" green="0.44396992374337851" blue="0.51309448571374572" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="srz-LR-Fkf" firstAttribute="leading" secondItem="YJY-nZ-GcH" secondAttribute="leading" id="EXf-f1-eVo"/>
+                            <constraint firstItem="YJY-nZ-GcH" firstAttribute="bottom" secondItem="srz-LR-Fkf" secondAttribute="bottom" constant="10" id="NzX-k8-0St"/>
+                            <constraint firstItem="srz-LR-Fkf" firstAttribute="top" secondItem="YJY-nZ-GcH" secondAttribute="top" constant="10" id="eeG-sI-DHB"/>
+                            <constraint firstItem="srz-LR-Fkf" firstAttribute="trailing" secondItem="YJY-nZ-GcH" secondAttribute="trailing" id="wdF-ho-slV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="YJY-nZ-GcH"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add" image="BreakLogo" id="WKU-D9-SEF"/>
-                    <navigationItem key="navigationItem" title="Something" id="rM3-H1-SvQ"/>
+                    <navigationItem key="navigationItem" title="Add Clock In Entry" id="rM3-H1-SvQ"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="testLbl" destination="WY3-fE-pvw" id="otp-bi-vZv"/>
+                        <outlet property="bInBtn" destination="LNs-Q7-D27" id="Ui5-Wo-yvY"/>
+                        <outlet property="bOutBtn" destination="Ki2-6V-dTE" id="HbG-j8-pSL"/>
+                        <outlet property="breakInTimeLbl" destination="ccx-cd-iNO" id="SR0-js-DwL"/>
+                        <outlet property="breakOutTimeLbl" destination="Cdf-2q-6c9" id="JFU-QD-IIl"/>
+                        <outlet property="dateBtn" destination="NGn-TO-ANs" id="FjC-yV-aR5"/>
+                        <outlet property="dateLbl" destination="nKb-BC-cA4" id="eoh-Yt-wp5"/>
+                        <outlet property="inBtn" destination="OkN-U3-f5e" id="zmd-Xz-5xe"/>
+                        <outlet property="inTimeLbl" destination="keG-gn-Fmf" id="xbS-N3-RDl"/>
+                        <outlet property="outBtn" destination="Hrj-4i-etH" id="QJw-Xj-TKX"/>
+                        <outlet property="outTimeLbl" destination="Xrk-U3-7Bi" id="IgL-74-PR4"/>
+                        <outlet property="resetBtn" destination="qce-py-o5h" id="REt-Qh-wbv"/>
+                        <outlet property="submitBtn" destination="JOs-cb-yGx" id="bdX-YZ-Kat"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HPZ-kE-vEf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="698.55072463768124" y="874.55357142857144"/>
         </scene>
+        <!--datePopUp-->
+        <scene sceneID="kwi-h5-3aK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="datePopUp" id="fvS-Bf-IN1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="74I-wf-lKZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="699" y="1360"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dX2-Jl-IhV"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="BreakLogo" width="25" height="25"/>
     </resources>

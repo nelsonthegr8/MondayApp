@@ -45,15 +45,16 @@ class ClockInViewController: UIViewController {
                {
                    DatabaseFunctions.createPunchOutInserts(status: "", time: DatabaseFunctions.getCurrentTime(request: "Time"))
                    TimeLbl.text = "Clocked out at: " + DatabaseFunctions.getCurrentTime(request: "Time")
+                setClockInButtons()
                }
                else
                {
                    DatabaseFunctions.createPunchInInserts(date: DatabaseFunctions.getCurrentTime(request: "Date"), inTime: DatabaseFunctions.getCurrentTime(request: "Time"), clockInStatus: true)
                    TimeLbl.text = "Clocked In at: " + DatabaseFunctions.getCurrentTime(request: "Time")
+                setClockInButtons()
                }
            }
 
-           setClockInButtons()
        }
     
     private func breakButtonFunctions()

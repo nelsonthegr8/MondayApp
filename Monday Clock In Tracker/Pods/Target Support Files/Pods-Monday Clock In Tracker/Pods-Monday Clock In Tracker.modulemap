@@ -1,0 +1,6 @@
+module Pods_Monday_Clock_In_Tracker {
+  umbrella header "Pods-Monday Clock In Tracker-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '13.0'
+
+target 'Monday Clock In Tracker' do
+  # Comment the next line if you don't want to use dynamic frameworks
+
+  pod 'SQLite.swift', '~> 0.12.0'
+
+  # Pods for Monday Clock In Tracker
+
+  target 'Monday Clock In TrackerTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Monday Clock In TrackerUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
